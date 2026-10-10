@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ====================================================================
+       PAGE HEAD & META CONFIGURATION
+       ==================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Neha Latheesh | Data Analyst Portfolio</title>
+  <meta name="description" content="Personal portfolio of Neha Latheesh - Aspiring Data Analyst specializing in Python, SQL, Power BI, Machine Learning, and Data Visualization.">
+  <meta name="keywords" content="Neha Latheesh, Data Analyst, Portfolio, Python, SQL, Power BI, Tableau, Data Science, Web Developer">
+  <meta name="author" content="Neha Latheesh">
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Neha Latheesh | Data Analyst Portfolio">
+  <meta property="og:description" content="Explore my data analytics projects, interactive dashboards, technical skills, and career journey.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans for body, Outfit for headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS via Official CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Font Awesome 6 Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+  <!-- ====================================================================
+       1. NAVIGATION BAR
+       Responsive Bootstrap 5 Navbar with frosted glass effect
+       ==================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar" id="mainNavbar">
+      <div class="container">
+        <!-- Brand Logo / Personal Name -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home" id="brand-logo">
+          <span class="brand-icon-box">
+            <i class="fa-solid fa-chart-pie"></i>
+          </span>
+          <span class="brand-text">NEHA<span class="accent-dot">.</span><span class="role-tag">ANALYST</span></span>
+        </a>
+
+        <!-- Hamburger Menu Button for Mobile -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggle-btn">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 my-3 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home" id="nav-home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" id="nav-about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills" id="nav-skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" id="nav-projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education" id="nav-education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" id="nav-contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a href="#contact" class="btn btn-primary-gradient btn-sm px-3 py-2 rounded-pill d-none d-lg-inline-flex align-items-center gap-2" id="nav-cta-btn">
+                <span>Hire Me</span>
+                <i class="fa-solid fa-arrow-right fa-xs"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         2. HERO SECTION
+         Personal Introduction, Animated Role, Buttons & Social Links
+         ==================================================================== -->
+    <section id="home" class="hero-section d-flex align-items-center position-relative">
+      <!-- Ambient background glow elements -->
+      <div class="glow-orb glow-orb-purple"></div>
+      <div class="glow-orb glow-orb-blue"></div>
+
+      <div class="container position-relative z-2">
+        <div class="row align-items-center gy-5">
+          <!-- Hero Left Column: Text & CTAs -->
+          <div class="col-lg-7 text-center text-lg-start">
+            <!-- Availability Badge -->
+            <div class="badge-status mb-3 d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill">
+              <span class="status-pulse-dot"></span>
+              <span class="badge-text">Available for Full-time Roles & Internships</span>
+            </div>
+
+            <!-- Greeting & Main Name -->
+            <h1 class="hero-title fw-bold text-white mb-2">
+              Hi, I'm <span class="gradient-text">NEHA LATHEESH</span>
+            </h1>
+
+            <!-- Animated Role Subtitle -->
+            <h2 class="hero-role mb-3">
+              I am a <span class="typing-role" id="typing-text">DATA ANALYST</span><span class="typing-cursor">|</span>
+            </h2>
+
+            <!-- Short Introduction -->
+            <p class="hero-description text-secondary-light mb-4">
+              Passionate Data Analyst equipped with strong problem-solving skills in <strong class="text-white">Python, SQL, Power BI</strong>, and <strong class="text-white">Machine Learning</strong>. I specialize in transforming raw datasets into actionable insights, interactive business dashboards, and data-driven narratives.
+            </p>
+
+            <!-- Call-to-action Buttons -->
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+              <a href="#projects" class="btn btn-primary-gradient px-4 py-3 rounded-pill fw-semibold shadow-purple d-inline-flex align-items-center gap-2" id="btn-view-work">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>View My Work</span>
+              </a>
+              <a href="#contact" class="btn btn-outline-glow px-4 py-3 rounded-pill fw-semibold d-inline-flex align-items-center gap-2" id="btn-contact-me">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Social Media Icons (GitHub, LinkedIn, Instagram) -->
+            <div class="hero-social d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
+              <span class="text-secondary-muted small text-uppercase tracking-wider">Connect:</span>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" id="hero-github">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" id="hero-linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram Profile" id="hero-instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="mailto:neha.latheesh@example.com" class="social-icon-btn" aria-label="Email Me" id="hero-email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Profile Card & Tech Visual -->
+          <div class="col-lg-5 text-center">
+            <div class="hero-card-wrapper position-relative mx-auto">
+              <!-- Animated halo border -->
+              <div class="hero-card-border-glow"></div>
+              
+              <!-- Profile Card Container -->
+              <div class="hero-profile-card p-4 p-md-5 text-center">
+                <!-- Profile Avatar (Modern SVG Tech Avatar) -->
+                <div class="profile-avatar-container mx-auto mb-4 position-relative">
+                  <div class="avatar-ring-glow"></div>
+                  <!-- High-aesthetic SVG profile illustration (reliable, self-contained, no external broken image links) -->
+                  <div class="avatar-image-placeholder d-flex align-items-center justify-content-center">
+                    <svg class="avatar-svg" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Neha Latheesh Avatar">
+                      <circle cx="80" cy="80" r="78" fill="url(#avatarGradient)" stroke="#8b5cf6" stroke-width="3"/>
+                      <defs>
+                        <linearGradient id="avatarGradient" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#1e1b4b"/>
+                          <stop offset="0.5" stop-color="#0f172a"/>
+                          <stop offset="1" stop-color="#311042"/>
+                        </linearGradient>
+                      </defs>
+                      <!-- Stylized Developer / Analyst Figure -->
+                      <circle cx="80" cy="58" r="28" fill="#e2e8f0"/>
+                      <path d="M42 128C42 104 59 94 80 94C101 94 118 104 118 128" fill="#a855f7"/>
+                      <!-- Glasses / Focus element -->
+                      <rect x="66" y="52" width="12" height="8" rx="2" stroke="#6366f1" stroke-width="2"/>
+                      <rect x="82" y="52" width="12" height="8" rx="2" stroke="#6366f1" stroke-width="2"/>
+                      <line x1="78" y1="56" x2="82" y2="56" stroke="#6366f1" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <!-- Floating Analytics Pill 1 -->
+                  <div class="floating-chip chip-python">
+                    <i class="fa-brands fa-python text-warning"></i>
+                    <span>Python</span>
+                  </div>
+                  <!-- Floating Analytics Pill 2 -->
+                  <div class="floating-chip chip-sql">
+                    <i class="fa-solid fa-database text-info"></i>
+                    <span>SQL</span>
+                  </div>
+                  <!-- Floating Analytics Pill 3 -->
+                  <div class="floating-chip chip-bi">
+                    <i class="fa-solid fa-chart-column text-accent-purple"></i>
+                    <span>Power BI</span>
+                  </div>
+                </div>
+
+                <!-- Profile Card Title & Highlights -->
+                <h3 class="text-white h5 fw-bold mb-1">Neha Latheesh</h3>
+                <p class="text-accent-cyan small fw-medium mb-3">Data Analyst & Problem Solver</p>
+
+                <!-- Mini Metrics Row -->
+                <div class="row g-2 pt-2 border-top border-dark-subtle">
+                  <div class="col-4">
+                    <div class="stat-pill p-2">
+                      <span class="d-block fw-bold text-white fs-6">15+</span>
+                      <span class="x-small text-secondary-muted">Projects</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="stat-pill p-2">
+                      <span class="d-block fw-bold text-accent-purple fs-6">95%</span>
+                      <span class="x-small text-secondary-muted">Accuracy</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="stat-pill p-2">
+                      <span class="d-block fw-bold text-accent-cyan fs-6">10+</span>
+                      <span class="x-small text-secondary-muted">Tools</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. ABOUT ME SECTION
+         Personal Introduction, Career Goals, Interests & Professional Background
+         ==================================================================== -->
+    <section id="about" class="section-padding position-relative">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center section-header mb-5">
+          <span class="section-tag">GET TO KNOW ME</span>
+          <h2 class="section-title text-white">About Me</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="text-secondary-light section-subtitle mx-auto">
+            Bridging raw complex data with clear executive decision-making.
+          </p>
+        </div>
+
+        <div class="row align-items-center gy-4">
+          <!-- About Story & Goals -->
+          <div class="col-lg-6">
+            <div class="about-card p-4 p-md-5 h-100">
+              <h3 class="text-white h4 fw-bold mb-3 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-bullseye text-accent-purple"></i>
+                <span>Who I Am & What I Do</span>
+              </h3>
+              <p class="text-secondary-light leading-relaxed mb-3">
+                Hello! I am <strong class="text-white">Neha Latheesh</strong>, a proactive Data Analyst with a solid background in Computer Science and quantitative analysis. I have a deep passion for understanding user behaviors, business performance metrics, and patterns hidden within complex datasets.
+              </p>
+              <p class="text-secondary-light leading-relaxed mb-3">
+                My workflow spans the entire data lifecycle: from querying and cleaning messy data using <strong class="text-white">SQL and Python (Pandas, NumPy)</strong>, to applying statistical analysis and building interactive executive dashboards with <strong class="text-white">Power BI and Tableau</strong>.
+              </p>
+
+              <!-- Career Goals & Vision -->
+              <div class="career-goal-box p-3 rounded-3 mt-4">
+                <h4 class="h6 text-accent-cyan fw-bold mb-2 d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-compass"></i> Career Goals
+                </h4>
+                <p class="small text-secondary-light mb-0">
+                  To leverage data analytics, predictive modeling, and business intelligence to help organizations make confident, data-backed decisions that drive measurable growth and operational efficiency.
+                </p>
+              </div>
+
+              <!-- Quick Info Badges -->
+              <div class="row g-3 mt-3">
+                <div class="col-sm-6">
+                  <div class="info-pill d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap text-accent-purple"></i>
+                    <span><strong>Degree:</strong> B.Tech in CSE</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-pill d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-accent-cyan"></i>
+                    <span><strong>Location:</strong> India (Open to Remote)</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-pill d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-briefcase text-warning"></i>
+                    <span><strong>Experience:</strong> Fresher / Entry-Level</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-pill d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-language text-success"></i>
+                    <span><strong>Languages:</strong> English, Hindi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Pillars / Focus Areas -->
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <!-- Pillar 1 -->
+              <div class="col-sm-6">
+                <div class="feature-card p-4 h-100">
+                  <div class="feature-icon-wrapper mb-3 text-accent-purple">
+                    <i class="fa-solid fa-chart-line fa-2x"></i>
+                  </div>
+                  <h4 class="h5 text-white fw-bold mb-2">Data Storytelling</h4>
+                  <p class="text-secondary-muted small mb-0">
+                    Transforming complex query outputs and pivot tables into intuitive, high-impact visual stories for stakeholders.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Pillar 2 -->
+              <div class="col-sm-6">
+                <div class="feature-card p-4 h-100">
+                  <div class="feature-icon-wrapper mb-3 text-accent-cyan">
+                    <i class="fa-solid fa-brain fa-2x"></i>
+                  </div>
+                  <h4 class="h5 text-white fw-bold mb-2">Predictive Modeling</h4>
+                  <p class="text-secondary-muted small mb-0">
+                    Applying Scikit-Learn classification, regression, and clustering algorithms to forecast trends and evaluate risks.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Pillar 3 -->
+              <div class="col-sm-6">
+                <div class="feature-card p-4 h-100">
+                  <div class="feature-icon-wrapper mb-3 text-warning">
+                    <i class="fa-solid fa-filter fa-2x"></i>
+                  </div>
+                  <h4 class="h5 text-white fw-bold mb-2">Data Wrangling & ETL</h4>
+                  <p class="text-secondary-muted small mb-0">
+                    Cleaning, transforming, and standardizing messy datasets with Pandas, NumPy, and complex SQL joins.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Pillar 4 -->
+              <div class="col-sm-6">
+                <div class="feature-card p-4 h-100">
+                  <div class="feature-icon-wrapper mb-3 text-success">
+                    <i class="fa-solid fa-code fa-2x"></i>
+                  </div>
+                  <h4 class="h5 text-white fw-bold mb-2">Web & Dashboard Tech</h4>
+                  <p class="text-secondary-muted small mb-0">
+                    Integrating analytics into modern web applications using HTML5, CSS3, JavaScript, Bootstrap 5, and APIs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. SKILLS SECTION
+         Technical Skills Cards, Badges, and Progress Indicators
+         Easy for beginners to replace and customize
+         ==================================================================== -->
+    <section id="skills" class="section-padding bg-darker position-relative">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center section-header mb-5">
+          <span class="section-tag">TECHNICAL CAPABILITIES</span>
+          <h2 class="section-title text-white">Skills & Toolkit</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="text-secondary-light section-subtitle mx-auto">
+            Tools, technologies, and analytical libraries I leverage to analyze data and build digital solutions.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Skill Card 1: Data Analytics & Programming -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-category-card p-4 h-100">
+              <div class="skill-header d-flex align-items-center gap-3 mb-4">
+                <div class="category-icon text-accent-purple">
+                  <i class="fa-brands fa-python fa-xl"></i>
+                </div>
+                <div>
+                  <h3 class="h6 text-white fw-bold mb-0">Data Analytics</h3>
+                  <small class="text-secondary-muted">Core Programming</small>
+                </div>
+              </div>
+
+              <!-- Skill Progress Items -->
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Python (Pandas, NumPy)</span>
+                  <span class="text-accent-purple fw-semibold">90%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-purple" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>SQL (MySQL, PostgreSQL)</span>
+                  <span class="text-accent-purple fw-semibold">88%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-purple" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Scikit-Learn (ML)</span>
+                  <span class="text-accent-purple fw-semibold">78%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-purple" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Exploratory Data Analysis (EDA)</span>
+                  <span class="text-accent-purple fw-semibold">92%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-purple" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: BI & Visualization -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-category-card p-4 h-100">
+              <div class="skill-header d-flex align-items-center gap-3 mb-4">
+                <div class="category-icon text-accent-cyan">
+                  <i class="fa-solid fa-chart-column fa-xl"></i>
+                </div>
+                <div>
+                  <h3 class="h6 text-white fw-bold mb-0">BI & Dashboards</h3>
+                  <small class="text-secondary-muted">Visualization</small>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Power BI (DAX, Reports)</span>
+                  <span class="text-accent-cyan fw-semibold">88%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-cyan" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Tableau</span>
+                  <span class="text-accent-cyan fw-semibold">80%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-cyan" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Advanced Excel & Pivot</span>
+                  <span class="text-accent-cyan fw-semibold">85%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-cyan" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Matplotlib & Seaborn</span>
+                  <span class="text-accent-cyan fw-semibold">86%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-cyan" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Web Development -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-category-card p-4 h-100">
+              <div class="skill-header d-flex align-items-center gap-3 mb-4">
+                <div class="category-icon text-warning">
+                  <i class="fa-brands fa-html5 fa-xl"></i>
+                </div>
+                <div>
+                  <h3 class="h6 text-white fw-bold mb-0">Web Development</h3>
+                  <small class="text-secondary-muted">UI & Frontend</small>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>HTML5 & Semantic Markup</span>
+                  <span class="text-warning fw-semibold">92%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>CSS3 & Modern Layouts</span>
+                  <span class="text-warning fw-semibold">88%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Bootstrap 5 Framework</span>
+                  <span class="text-warning fw-semibold">90%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>JavaScript & DOM (ES6+)</span>
+                  <span class="text-warning fw-semibold">80%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Tools & Platforms -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-category-card p-4 h-100">
+              <div class="skill-header d-flex align-items-center gap-3 mb-4">
+                <div class="category-icon text-success">
+                  <i class="fa-solid fa-toolbox fa-xl"></i>
+                </div>
+                <div>
+                  <h3 class="h6 text-white fw-bold mb-0">Tools & Workflow</h3>
+                  <small class="text-secondary-muted">Platforms & Git</small>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Git & GitHub</span>
+                  <span class="text-success fw-semibold">85%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Jupyter & Google Colab</span>
+                  <span class="text-success fw-semibold">92%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>VS Code & Antigravity IDE</span>
+                  <span class="text-success fw-semibold">90%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between text-secondary-light small mb-1">
+                  <span>Flutter Basics</span>
+                  <span class="text-success fw-semibold">70%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Skills Badge Wall for Beginners to add more items -->
+        <div class="skills-badge-wall mt-5 p-4 rounded-4 text-center">
+          <h4 class="h6 text-secondary-light text-uppercase tracking-wider mb-3">Additional Competencies & Libraries</h4>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <span class="badge skill-badge"><i class="fa-solid fa-check text-accent-purple me-1"></i> Data Cleaning</span>
+            <span class="badge skill-badge"><i class="fa-solid fa-check text-accent-purple me-1"></i> Statistical Hypothesis Testing</span>
+            <span class="badge skill-badge"><i class="fa-solid fa-check text-accent-purple me-1"></i> A/B Testing</span>
+            <span class="badge skill-badge"><i class="fa-solid fa-check text-accent-purple me-1"></i> Feature Engineering</span>
+            <span class="badge skill-badge"><i class="fa-solid fa-check text-accent-purple me-1"></i> REST APIs & JSON</span>
+            <span class="badge skill-badge"><i class="fa-solid fa-check text-accent-purple me-1"></i> Relational Database Normalization</span>
+            <span class="badge skill-badge"><i class="fa-solid fa-check text-accent-purple me-1"></i> Responsive Web Design</span>
+            <span class="badge skill-badge"><i class="fa-solid fa-check text-accent-purple me-1"></i> Data Pipeline Automation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. PROJECTS SECTION
+         Cards with Title, Description, Technologies Used, GitHub & Demo links
+         Interactive Filter Buttons (All, ML, BI Dashboards, Web Analytics)
+         ==================================================================== -->
+    <section id="projects" class="section-padding position-relative">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center section-header mb-5">
+          <span class="section-tag">PORTFOLIO SHOWCASE</span>
+          <h2 class="section-title text-white">Featured Projects</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="text-secondary-light section-subtitle mx-auto">
+            Real-world data analytics projects, machine learning models, and interactive dashboards.
+          </p>
+
+          <!-- Interactive Filter Buttons -->
+          <div class="project-filter-buttons d-flex flex-wrap justify-content-center gap-2 mt-4" id="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="filter-btn" data-filter="bi">BI & Dashboards</button>
+            <button class="filter-btn" data-filter="web">Web Analytics</button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="projects-grid">
+          <!-- Project Card 1: Customer Churn Prediction -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="ml">
+            <div class="project-card h-100 d-flex flex-column">
+              <!-- Visual Mockup Banner -->
+              <div class="project-banner banner-purple position-relative">
+                <div class="banner-badge">ML & Classification</div>
+                <div class="banner-illustration d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-user-xmark project-hero-icon"></i>
+                </div>
+              </div>
+
+              <!-- Project Body -->
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h3 class="h5 text-white fw-bold mb-2">Customer Churn Prediction & Retention Strategy</h3>
+                <p class="text-secondary-muted small mb-3 flex-grow-1">
+                  Built end-to-end predictive classification models (Random Forest, XGBoost) on 10,000+ telecom customer records, achieving an 89% recall rate. Synthesized findings into an executive Power BI dashboard to guide proactive retention campaigns.
+                </p>
+
+                <!-- Technology Badges -->
+                <div class="tech-stack-badges d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Scikit-Learn</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">Power BI</span>
+                  <span class="tech-tag">SQL</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-2 pt-2 border-top border-dark-subtle">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                  <button type="button" class="btn btn-primary-gradient btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2 btn-open-modal"
+                          data-title="Customer Churn Prediction"
+                          data-desc="This project tackles the challenge of reducing customer attrition in telecommunications. By performing exploratory data analysis, handling class imbalance using SMOTE, and training an ensemble of decision trees, the system identifies high-risk churn customers with 89% accuracy. The output feeds an interactive dashboard for marketing teams to launch personalized retention discounts."
+                          data-tech="Python, Scikit-Learn, Pandas, Power BI, SQL, Matplotlib"
+                          data-metrics="89% Recall Rate | 10k+ Records Analyzed | $45k Est. Revenue Saved">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <span>Case Study</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2: E-Commerce Sales & KPI Dashboard -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="bi">
+            <div class="project-card h-100 d-flex flex-column">
+              <!-- Visual Mockup Banner -->
+              <div class="project-banner banner-cyan position-relative">
+                <div class="banner-badge">BI & Analytics</div>
+                <div class="banner-illustration d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-chart-line project-hero-icon text-cyan"></i>
+                </div>
+              </div>
+
+              <!-- Project Body -->
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h3 class="h5 text-white fw-bold mb-2">E-Commerce Sales Performance & KPI Tracker</h3>
+                <p class="text-secondary-muted small mb-3 flex-grow-1">
+                  Engineered dynamic multi-page dashboards visualizing sales revenue, customer lifetime value (CLV), regional churn, and inventory turnover across 250,000+ omnichannel transactions using Tableau and SQL.
+                </p>
+
+                <!-- Technology Badges -->
+                <div class="tech-stack-badges d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">Tableau</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Excel</span>
+                  <span class="tech-tag">Seaborn</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-2 pt-2 border-top border-dark-subtle">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                  <button type="button" class="btn btn-primary-gradient btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2 btn-open-modal"
+                          data-title="E-Commerce Sales & KPI Dashboard"
+                          data-desc="Constructed a complete data pipeline and interactive business intelligence dashboard to evaluate profitability and order trends across multiple international geographies. The analysis revealed seasonal spikes and product category cannibalization, assisting inventory managers in reducing surplus stock by 22%."
+                          data-tech="SQL, Tableau, Python (Seaborn), Advanced Excel"
+                          data-metrics="250k+ Orders Processed | 22% Reduced Stock Surplus | 12 KPIs Monitored">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <span>Case Study</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3: Healthcare Patient Readmission Analytics -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="ml">
+            <div class="project-card h-100 d-flex flex-column">
+              <!-- Visual Mockup Banner -->
+              <div class="project-banner banner-purple-dark position-relative">
+                <div class="banner-badge">Statistical Analysis</div>
+                <div class="banner-illustration d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-heart-pulse project-hero-icon text-accent-purple"></i>
+                </div>
+              </div>
+
+              <!-- Project Body -->
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h3 class="h5 text-white fw-bold mb-2">Hospital Patient Readmission Risk Analytics</h3>
+                <p class="text-secondary-muted small mb-3 flex-grow-1">
+                  Evaluated clinical EHR records using multivariate logistic regression and hypothesis testing to identify risk factors for 30-day patient hospital readmissions, improving discharge planning protocols.
+                </p>
+
+                <!-- Technology Badges -->
+                <div class="tech-stack-badges d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Statsmodels</span>
+                  <span class="tech-tag">Matplotlib</span>
+                  <span class="tech-tag">Jupyter</span>
+                  <span class="tech-tag">SciPy</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-2 pt-2 border-top border-dark-subtle">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                  <button type="button" class="btn btn-primary-gradient btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2 btn-open-modal"
+                          data-title="Hospital Patient Readmission Risk"
+                          data-desc="Analyzed hospital stay records to discover clinical correlations between diagnostic groups and unplanned hospital readmissions. Utilized p-value significance tests, odds-ratio analyses, and ROC-AUC metrics to produce a clinical risk score sheet."
+                          data-tech="Python, Statsmodels, SciPy, Matplotlib, Jupyter Notebook"
+                          data-metrics="0.84 ROC-AUC | 50k+ Clinical Records | Significant Risk Factors Isolated">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <span>Case Study</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4: Web KPI Performance Dashboard -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="web">
+            <div class="project-card h-100 d-flex flex-column">
+              <!-- Visual Mockup Banner -->
+              <div class="project-banner banner-blue position-relative">
+                <div class="banner-badge">Web Application</div>
+                <div class="banner-illustration d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-globe project-hero-icon text-info"></i>
+                </div>
+              </div>
+
+              <!-- Project Body -->
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h3 class="h5 text-white fw-bold mb-2">Live Web Analytics & Market Tracker App</h3>
+                <p class="text-secondary-muted small mb-3 flex-grow-1">
+                  Engineered an interactive web analytics dashboard with Bootstrap 5 and Chart.js, pulling real-time market data from REST APIs to display live charts, volatility indicators, and volume trends.
+                </p>
+
+                <!-- Technology Badges -->
+                <div class="tech-stack-badges d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Chart.js</span>
+                  <span class="tech-tag">Bootstrap 5</span>
+                  <span class="tech-tag">HTML5/CSS3</span>
+                  <span class="tech-tag">REST APIs</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-2 pt-2 border-top border-dark-subtle">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                  <button type="button" class="btn btn-primary-gradient btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2 btn-open-modal"
+                          data-title="Live Web Analytics & Market Tracker App"
+                          data-desc="Designed and implemented a lightweight, fast web application for tracking financial indicators in real-time. Features custom dark mode charts, responsive layout on mobile, caching mechanisms, and asynchronous data fetching."
+                          data-tech="JavaScript (ES6+), Chart.js, HTML5, CSS3, Bootstrap 5, Fetch API"
+                          data-metrics="Real-Time Feed | 6 Live Chart Views | Sub-50ms Render Times">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <span>Case Study</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5: SQL Exploratory Analysis & Database Normalization -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="bi">
+            <div class="project-card h-100 d-flex flex-column">
+              <!-- Visual Mockup Banner -->
+              <div class="project-banner banner-purple position-relative">
+                <div class="banner-badge">Database & SQL</div>
+                <div class="banner-illustration d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-database project-hero-icon text-accent-purple"></i>
+                </div>
+              </div>
+
+              <!-- Project Body -->
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h3 class="h5 text-white fw-bold mb-2">Relational Data Warehouse & SQL Query Optimization</h3>
+                <p class="text-secondary-muted small mb-3 flex-grow-1">
+                  Architected a normalized (3NF) relational database schema in PostgreSQL for a retail logistics chain. Wrote complex window functions, CTEs, and indexed queries that cut reporting runtimes by 65%.
+                </p>
+
+                <!-- Technology Badges -->
+                <div class="tech-stack-badges d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">SQL Window Functions</span>
+                  <span class="tech-tag">ER Diagrams</span>
+                  <span class="tech-tag">ETL</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-2 pt-2 border-top border-dark-subtle">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                  <button type="button" class="btn btn-primary-gradient btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2 btn-open-modal"
+                          data-title="Relational Data Warehouse & SQL Optimization"
+                          data-desc="Consolidated disparate CSV files into a centralized PostgreSQL data warehouse. Implemented stored procedures, indexing strategies, and automated views to power fast reporting for business managers."
+                          data-tech="PostgreSQL, Advanced SQL, Database Schema Design, Python SQLAlchemy"
+                          data-metrics="65% Faster Query Execution | 3NF Schema | 1.2M Records Processed">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <span>Case Study</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 6: Sentiment Analysis & NLP on Product Reviews -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="ml">
+            <div class="project-card h-100 d-flex flex-column">
+              <!-- Visual Mockup Banner -->
+              <div class="project-banner banner-cyan position-relative">
+                <div class="banner-badge">NLP & Text Mining</div>
+                <div class="banner-illustration d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-comments project-hero-icon text-cyan"></i>
+                </div>
+              </div>
+
+              <!-- Project Body -->
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h3 class="h5 text-white fw-bold mb-2">Customer Feedback Sentiment & Topic Modeling</h3>
+                <p class="text-secondary-muted small mb-3 flex-grow-1">
+                  Extracted sentiment scores and dominant complaint topics from 40,000+ consumer feedback reviews using VADER, TF-IDF vectorization, and Latent Dirichlet Allocation (LDA) in Python.
+                </p>
+
+                <!-- Technology Badges -->
+                <div class="tech-stack-badges d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-tag">Python (NLTK)</span>
+                  <span class="tech-tag">TF-IDF</span>
+                  <span class="tech-tag">LDA Topic Modeling</span>
+                  <span class="tech-tag">WordCloud</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-2 pt-2 border-top border-dark-subtle">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                  <button type="button" class="btn btn-primary-gradient btn-sm rounded-pill flex-fill d-inline-flex align-items-center justify-content-center gap-2 btn-open-modal"
+                          data-title="Customer Feedback Sentiment & Topic Modeling"
+                          data-desc="Built a text mining pipeline that processes raw unstructured reviews, filters noise, lemmatizes text, and visualizes major pain points. Enabled product teams to pinpoint top user complaints within 48 hours."
+                          data-tech="Python, NLTK, Scikit-Learn, Pandas, WordCloud, Seaborn"
+                          data-metrics="40k+ Reviews Mined | 92% Sentiment Classification | 5 Core Pain Points">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <span>Case Study</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. EDUCATION & CERTIFICATIONS SECTION
+         Timeline / Card Layout with Degree, Institution, Year, and Courses
+         ==================================================================== -->
+    <section id="education" class="section-padding bg-darker position-relative">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center section-header mb-5">
+          <span class="section-tag">ACADEMIC JOURNEY</span>
+          <h2 class="section-title text-white">Education & Certifications</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="text-secondary-light section-subtitle mx-auto">
+            My formal education, specialized data analytics programs, and recognized credentials.
+          </p>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Left Column: Formal Education Timeline -->
+          <div class="col-lg-6">
+            <h3 class="h5 text-white fw-bold mb-4 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-graduation-cap text-accent-purple"></i>
+              <span>Academic Degrees</span>
+            </h3>
+
+            <!-- Timeline Container -->
+            <div class="timeline-container position-relative ps-4">
+              <div class="timeline-line"></div>
+
+              <!-- Education Item 1 -->
+              <div class="timeline-item mb-4 position-relative">
+                <div class="timeline-dot dot-purple"></div>
+                <div class="timeline-card p-4 rounded-3">
+                  <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <h4 class="h6 text-white fw-bold mb-0">Bachelor of Technology (B.Tech) - Computer Science</h4>
+                    <span class="badge timeline-badge">2020 - 2024</span>
+                  </div>
+                  <p class="text-accent-cyan small fw-medium mb-2">
+                    <i class="fa-solid fa-building-columns me-1"></i> APJ Abdul Kalam Technological University
+                  </p>
+                  <p class="text-secondary-muted small mb-2">
+                    <strong>CGPA:</strong> 8.7 / 10 | First Class with Distinction
+                  </p>
+                  <p class="text-secondary-light small mb-0">
+                    <strong>Key Coursework:</strong> Database Management Systems (DBMS), Data Structures & Algorithms, Applied Probability & Statistics, Machine Learning, Data Warehousing & Mining.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Education Item 2 -->
+              <div class="timeline-item mb-4 position-relative">
+                <div class="timeline-dot dot-cyan"></div>
+                <div class="timeline-card p-4 rounded-3">
+                  <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <h4 class="h6 text-white fw-bold mb-0">Higher Secondary Education (12th Grade)</h4>
+                    <span class="badge timeline-badge">2018 - 2020</span>
+                  </div>
+                  <p class="text-accent-cyan small fw-medium mb-2">
+                    <i class="fa-solid fa-school me-1"></i> St. Joseph's Higher Secondary School
+                  </p>
+                  <p class="text-secondary-muted small mb-2">
+                    <strong>Score:</strong> 94.2% | Stream: Science (Physics, Chemistry, Mathematics, Computer Science)
+                  </p>
+                  <p class="text-secondary-light small mb-0">
+                    Strong foundation in calculus, statistics, linear algebra, and logic formulation.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Education Item 3 -->
+              <div class="timeline-item position-relative">
+                <div class="timeline-dot dot-purple"></div>
+                <div class="timeline-card p-4 rounded-3">
+                  <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <h4 class="h6 text-white fw-bold mb-0">Secondary School Leaving Certificate (10th)</h4>
+                    <span class="badge timeline-badge">2018</span>
+                  </div>
+                  <p class="text-accent-cyan small fw-medium mb-2">
+                    <i class="fa-solid fa-school me-1"></i> Secondary Board of Education
+                  </p>
+                  <p class="text-secondary-muted small mb-0">
+                    <strong>Score:</strong> 96% | High distinction in Mathematics & Computer Fundamentals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Professional Certifications & Training -->
+          <div class="col-lg-6">
+            <h3 class="h5 text-white fw-bold mb-4 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-award text-accent-cyan"></i>
+              <span>Professional Certifications</span>
+            </h3>
+
+            <div class="d-flex flex-column gap-3">
+              <!-- Cert 1 -->
+              <div class="cert-card p-4 rounded-3 d-flex align-items-start gap-3">
+                <div class="cert-icon-box text-warning">
+                  <i class="fa-brands fa-google fa-2x"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-1 mb-1">
+                    <h4 class="h6 text-white fw-bold mb-0">Google Data Analytics Professional Certificate</h4>
+                    <span class="badge cert-badge">Coursera</span>
+                  </div>
+                  <p class="text-secondary-muted small mb-1">Verified Credential &bull; 8 Comprehensive Courses</p>
+                  <p class="text-secondary-light small mb-0">
+                    Covered end-to-end data processing, SQL data cleaning, Tableau visualization, and analytical problem framing.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Cert 2 -->
+              <div class="cert-card p-4 rounded-3 d-flex align-items-start gap-3">
+                <div class="cert-icon-box text-info">
+                  <i class="fa-solid fa-chart-pie fa-2x"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-1 mb-1">
+                    <h4 class="h6 text-white fw-bold mb-0">IBM Data Science Specialization</h4>
+                    <span class="badge cert-badge">IBM</span>
+                  </div>
+                  <p class="text-secondary-muted small mb-1">Python, SQL, Data Analysis & Machine Learning with Scikit-Learn</p>
+                  <p class="text-secondary-light small mb-0">
+                    Hands-on practical capstone project analyzing real-world aerospace flight datasets with machine learning.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Cert 3 -->
+              <div class="cert-card p-4 rounded-3 d-flex align-items-start gap-3">
+                <div class="cert-icon-box text-accent-purple">
+                  <i class="fa-solid fa-database fa-2x"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-1 mb-1">
+                    <h4 class="h6 text-white fw-bold mb-0">Advanced SQL for Data Scientists</h4>
+                    <span class="badge cert-badge">HackerRank / Udemy</span>
+                  </div>
+                  <p class="text-secondary-muted small mb-1">5-Star Gold Badge in SQL on HackerRank</p>
+                  <p class="text-secondary-light small mb-0">
+                    Mastery of joins, aggregations, window rank functions, common table expressions, and stored procedures.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Cert 4 -->
+              <div class="cert-card p-4 rounded-3 d-flex align-items-start gap-3">
+                <div class="cert-icon-box text-success">
+                  <i class="fa-brands fa-microsoft fa-2x"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-1 mb-1">
+                    <h4 class="h6 text-white fw-bold mb-0">Microsoft Power BI Desktop for Business</h4>
+                    <span class="badge cert-badge">Specialized</span>
+                  </div>
+                  <p class="text-secondary-muted small mb-1">Interactive Dashboards & DAX Calculations</p>
+                  <p class="text-secondary-light small mb-0">
+                    Data modeling, Star Schema implementation, calculated measures, and cross-filter visual interactions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. CONTACT SECTION
+         Name, Email, Message, Direct info & Clear Backend Disclaimer Note
+         ==================================================================== -->
+    <section id="contact" class="section-padding position-relative">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center section-header mb-5">
+          <span class="section-tag">LET'S CONNECT</span>
+          <h2 class="section-title text-white">Contact Me</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="text-secondary-light section-subtitle mx-auto">
+            Have an open data analyst role, freelance inquiry, or collaboration idea? Drop me a message!
+          </p>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Left Column: Contact Details & Info Cards -->
+          <div class="col-lg-5">
+            <div class="contact-info-panel p-4 p-md-5 h-100 rounded-4">
+              <h3 class="text-white h4 fw-bold mb-3">Let's talk about data!</h3>
+              <p class="text-secondary-light mb-4">
+                I am actively seeking full-time opportunities, graduate trainee roles, and data analytics internships. Feel free to connect directly via email or social networks.
+              </p>
+
+              <!-- Info Cards -->
+              <div class="d-flex flex-column gap-3 mb-4">
+                <!-- Email Item -->
+                <a href="mailto:neha.latheesh@example.com" class="contact-method-card text-decoration-none">
+                  <div class="method-icon-box text-accent-purple">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span class="text-secondary-muted d-block x-small text-uppercase">Email</span>
+                    <span class="text-white fw-semibold small">neha.latheesh@example.com</span>
+                  </div>
+                </a>
+
+                <!-- Location Item -->
+                <div class="contact-method-card">
+                  <div class="method-icon-box text-accent-cyan">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <span class="text-secondary-muted d-block x-small text-uppercase">Location</span>
+                    <span class="text-white fw-semibold small">Bangalore, Karnataka, India (Open to Relocation)</span>
+                  </div>
+                </div>
+
+                <!-- LinkedIn Item -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-method-card text-decoration-none">
+                  <div class="method-icon-box text-info">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <div>
+                    <span class="text-secondary-muted d-block x-small text-uppercase">LinkedIn</span>
+                    <span class="text-white fw-semibold small">linkedin.com/in/nehalatheesh</span>
+                  </div>
+                </a>
+
+                <!-- GitHub Item -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-method-card text-decoration-none">
+                  <div class="method-icon-box text-white">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <div>
+                    <span class="text-secondary-muted d-block x-small text-uppercase">GitHub</span>
+                    <span class="text-white fw-semibold small">github.com/nehalatheesh</span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Social Links Row -->
+              <div class="pt-3 border-top border-dark-subtle">
+                <span class="text-secondary-muted small d-block mb-2">Follow my coding journey:</span>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form with Validation & Clear Backend Note -->
+          <div class="col-lg-7">
+            <div class="contact-form-panel p-4 p-md-5 rounded-4 position-relative">
+              
+              <!-- CLEAR EXPLANATORY NOTE ON BACKEND INTEGRATION (Workshop Friendly) -->
+              <div class="alert alert-workshop-notice d-flex align-items-start gap-3 mb-4" role="alert">
+                <i class="fa-solid fa-circle-info text-accent-cyan fs-5 mt-1"></i>
+                <div class="small">
+                  <strong class="text-white d-block mb-1">Developer / Workshop Note:</strong>
+                  This portfolio form includes complete front-end JavaScript validation. To receive real messages in production, simply hook up a free service like <a href="https://formspree.io" target="_blank" rel="noopener" class="text-accent-cyan text-decoration-underline">Formspree</a>, <a href="https://www.emailjs.com" target="_blank" rel="noopener" class="text-accent-cyan text-decoration-underline">EmailJS</a>, or your custom Python/Flask backend!
+                </div>
+              </div>
+
+              <!-- Form Submission Success Alert (Hidden by default) -->
+              <div id="form-success-alert" class="alert alert-success d-none align-items-center gap-2 mb-4" role="alert">
+                <i class="fa-solid fa-circle-check fs-5"></i>
+                <div>
+                  <strong>Thank you, <span id="sender-display-name">friend</span>!</strong> Your message has been received (simulated demo). I will get back to you shortly!
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <!-- Name Field -->
+                  <div class="col-md-6">
+                    <label for="contactName" class="form-label text-white small fw-semibold">Your Name <span class="text-accent-purple">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text custom-input-addon"><i class="fa-regular fa-user"></i></span>
+                      <input type="text" class="form-control custom-input" id="contactName" placeholder="e.g. Alex Johnson" required>
+                    </div>
+                    <div class="invalid-feedback text-danger-subtle small mt-1">
+                      Please enter your name.
+                    </div>
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="col-md-6">
+                    <label for="contactEmail" class="form-label text-white small fw-semibold">Your Email <span class="text-accent-purple">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text custom-input-addon"><i class="fa-regular fa-envelope"></i></span>
+                      <input type="email" class="form-control custom-input" id="contactEmail" placeholder="e.g. alex@example.com" required>
+                    </div>
+                    <div class="invalid-feedback text-danger-subtle small mt-1">
+                      Please provide a valid email address.
+                    </div>
+                  </div>
+
+                  <!-- Subject Field -->
+                  <div class="col-12">
+                    <label for="contactSubject" class="form-label text-white small fw-semibold">Subject <span class="text-accent-purple">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text custom-input-addon"><i class="fa-solid fa-tag"></i></span>
+                      <input type="text" class="form-control custom-input" id="contactSubject" placeholder="e.g. Job Opportunity / Data Project Inquiry" required>
+                    </div>
+                    <div class="invalid-feedback text-danger-subtle small mt-1">
+                      Please enter a message subject.
+                    </div>
+                  </div>
+
+                  <!-- Message Field -->
+                  <div class="col-12">
+                    <label for="contactMessage" class="form-label text-white small fw-semibold">Your Message <span class="text-accent-purple">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text custom-input-addon align-items-start pt-2"><i class="fa-regular fa-comment-dots"></i></span>
+                      <textarea class="form-control custom-input" id="contactMessage" rows="5" placeholder="Hi Neha, I came across your portfolio and would love to discuss..." required></textarea>
+                    </div>
+                    <div class="invalid-feedback text-danger-subtle small mt-1">
+                      Please type your message (minimum 10 characters).
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn btn-primary-gradient px-4 py-3 rounded-pill fw-semibold w-100 d-inline-flex align-items-center justify-content-center gap-2" id="btn-submit-form">
+                      <span id="btn-text">Send Message</span>
+                      <i class="fa-solid fa-paper-plane fa-sm" id="btn-icon"></i>
+                      <span class="spinner-border spinner-border-sm d-none" id="btn-spinner" role="status" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       8. FOOTER SECTION
+       Personal Name, Social Links, Dynamic Copyright Year & Scroll-to-Top
+       ==================================================================== -->
+  <footer class="footer-section py-4 border-top border-dark-subtle position-relative">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <!-- Footer Left: Branding & Tagline -->
+        <div class="col-md-5 text-center text-md-start">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-1">
+            <span class="brand-icon-box brand-icon-box-sm">
+              <i class="fa-solid fa-chart-pie"></i>
+            </span>
+            <span class="brand-text fw-bold text-white">NEHA LATHEESH</span>
+          </div>
+          <p class="text-secondary-muted small mb-0">
+            Data Analyst &bull; Turning complex numbers into visual clarity.
+          </p>
+        </div>
+
+        <!-- Footer Center: Social Links -->
+        <div class="col-md-3 text-center">
+          <div class="d-flex justify-content-center gap-2">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-icon-btn-sm" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-icon-btn-sm" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-icon-btn-sm" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:neha.latheesh@example.com" class="social-icon-btn social-icon-btn-sm" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Footer Right: Copyright -->
+        <div class="col-md-4 text-center text-md-end">
+          <p class="text-secondary-muted small mb-0">
+            &copy; <span id="current-year">2026</span> <strong class="text-white">Neha Latheesh</strong>. All rights reserved.
+          </p>
+          <small class="text-secondary-muted x-small d-block mt-1">
+            Crafted with HTML5, CSS3 & Bootstrap 5
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button type="button" class="btn btn-back-to-top shadow-purple rounded-circle d-none" id="btn-back-to-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ====================================================================
+       PROJECT DETAILS MODAL (Bootstrap 5 Modal)
+       Displays in-depth case study information when clicked
+       ==================================================================== -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content custom-modal-content">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title text-white fw-bold d-flex align-items-center gap-2" id="projectModalTitle">
+            <i class="fa-solid fa-folder-open text-accent-purple"></i>
+            <span id="modalProjectHeading">Project Case Study</span>
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="modal-metrics-card p-3 rounded-3 mb-3">
+            <span class="x-small text-secondary-muted text-uppercase d-block fw-bold mb-1">Key Impact Metrics</span>
+            <p class="text-accent-cyan fw-semibold mb-0 small" id="modalProjectMetrics">Metrics loading...</p>
+          </div>
+          <h6 class="text-white fw-bold mb-2">Overview & Analytical Approach</h6>
+          <p class="text-secondary-light small leading-relaxed" id="modalProjectDescription">
+            Description goes here...
+          </p>
+          <h6 class="text-white fw-bold mb-2 mt-3">Technologies Leveraged</h6>
+          <div class="p-2 bg-dark rounded text-secondary-light small" id="modalProjectTech">
+            Python, SQL, Power BI
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm rounded-pill px-3" id="modalGithubBtn">
+            <i class="fa-brands fa-github me-1"></i> View Code
+          </a>
+          <button type="button" class="btn btn-primary-gradient btn-sm rounded-pill px-3" data-bs-dismiss="modal">
+            Close Case Study
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS (Includes Popper) via Official CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
